@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Weather", "Weather\Weather.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C3A81468-7996-44EA-99E3-9843227067B2}"
 	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
 		angular.json = angular.json
+		db_script.sql = db_script.sql
 		package-lock.json = package-lock.json
 		package.json = package.json
 		tslint.json = tslint.json
