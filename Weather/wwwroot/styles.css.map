@@ -1,0 +1,1 @@
+{"version":3,"sources":["Weather/src/styles.css"],"names":[],"mappings":"AAAA,8EAA8E;AAC9E;IACI,gBAAgB;AACpB;AAEA;IACI,SAAS;AACb","file":"styles.css","sourcesContent":["/* You can add global styles to this file, and also import other style files */\n.main{\n    padding-top:50px;\n}\n\n.error{\n    color:red;\n}\n"],"sourceRoot":"webpack:///"}

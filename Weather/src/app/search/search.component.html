@@ -1,0 +1,28 @@
+<div class="main container">
+  <h1>Search</h1>
+  <div class="row">
+    <div class="col-8">
+      <form #form="ngForm" id="form" (ngSubmit)="search(form)" onkeydown="return event.key != 'Enter';">
+        <div class="form-row">
+          <div class="col">
+            <input #city="ngModel" [(ngModel)]="query" name="city" type="text" placeholder="city" class="form-control" required />
+          </div>
+          <div class="col">
+            <button class="btn btn-primary">Search</button>
+          </div>
+        </div>
+
+        <div *ngIf="city.invalid && city.errors.required && (submitted || city.touched)" class="error">
+          City name is missing.
+        </div>
+        <br />
+
+        <city-weather [city]="selectedCity" [showAddFavorite]="true"></city-weather>
+      </form>
+    </div>
+    <div class="col-4">
+      <city-list [cities]="searchResults" (citySelected)="setCity($event)"></city-list>
+    </div>
+
+  </div>
+</div>

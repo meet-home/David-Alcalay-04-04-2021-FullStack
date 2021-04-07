@@ -1,0 +1,18 @@
+<div class="container" *ngIf="currentCity">
+  <div class="row">
+    <div class="col-6">
+      <div> 
+        {{currentCity.localizedName}}
+      </div>
+      <div *ngIf="currentWeather">
+        {{currentWeather.weather}}
+        {{currentWeather.weatherText}}
+      </div>
+    </div>
+    <div class="col-6">
+      <button type="button" *ngIf="showAddFavorite" (click)="addToFavorites()" class="btn btn-outline-primary">Add to Favorites</button>
+      <button type="button" *ngIf="showRemoveFavorite" (click)="removeFromFavorites()" class="btn btn-outline-primary">Remove From Favorites</button>
+    </div>
+  </div>
+</div>
+

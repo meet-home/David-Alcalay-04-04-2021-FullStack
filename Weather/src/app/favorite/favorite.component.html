@@ -1,0 +1,12 @@
+<div class="main container">
+  <h1>Favorites</h1>
+
+  <div class="row">
+    <div class="col-8">
+      <city-weather [city]="selectedCity" [showRemoveFavorite]="true" (favoritesChanged)="loadFavoriteList()"></city-weather>
+    </div>
+    <div class="col-4">
+      <city-list [cities]="favoriteList" (citySelected)="setCity($event)"></city-list>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+GET /locations/v1/cities/autocomplete?apikey=1z29Q6Xjy1wVNhICRxF1vYAYXtdwH1Zj&q=je HTTP/1.1
+http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=1z29Q6Xjy1wVNhICRxF1vYAYXtdwH1Zj&q=je
+
+
+http://dataservice.accuweather.com/currentconditions/v1/299429?apikey=1z29Q6Xjy1wVNhICRxF1vYAYXtdwH1Zj
+
+
+"[{\"LocalObservationDateTime\":\"2021-04-06T06:10:00+09:00\",\"EpochTime\":1617657000,\"WeatherText\":\"Some clouds\",\"WeatherIcon\":36,\"HasPrecipitation\":false,\"PrecipitationType\":null,\"IsDayTime\":false,\"Temperature\":{\"Metric\":{\"Value\":5.8,\"Unit\":\"C\",\"UnitType\":17},\"Imperial\":{\"Value\":42.0,\"Unit\":\"F\",\"UnitType\":18}},\"MobileLink\":\"http://m.accuweather.com/en/kr/jeonju/223078/current-weather/223078?lang=en-us\",\"Link\":\"http://www.accuweather.com/en/kr/jeonju/223078/current-weather/223078?lang=en-us\"}]"
+
+
+[
+  {
+    "LocalObservationDateTime": "2021-04-05T22:25:00+03:00",
+    "EpochTime": 1617650700,
+    "WeatherText": "Clear",
+    "WeatherIcon": 33,
+    "HasPrecipitation": false,
+    "PrecipitationType": null,
+    "IsDayTime": false,
+    "Temperature": {
+      "Metric": {
+        "Value": 28.1,
+        "Unit": "C",
+        "UnitType": 17
+      },
+      "Imperial": {
+        "Value": 83,
+        "Unit": "F",
+        "UnitType": 18
+      }
+    },
+    "MobileLink": "http://m.accuweather.com/en/sa/jeddah/299429/current-weather/299429?lang=en-us",
+    "Link": "http://www.accuweather.com/en/sa/jeddah/299429/current-weather/299429?lang=en-us"
+  }
+]
